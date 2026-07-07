@@ -2,25 +2,7 @@ import React from 'react';
 import "../css/All.css";
 
 export default function Publications() {
-  const publications = [
-    {
-      title: "Paper Title 1",
-      authors: "Zhang, Y., Author, A., & Author, B.",
-      venue: "Conference Name 2026",
-      links: [
-        { text: "Paper", url: "#" },
-        { text: "GitHub", url: "#" },
-      ]
-    },
-    {
-      title: "Paper Title 2",
-      authors: "Zhang, Y., Author, C.",
-      venue: "Journal Name 2025",
-      links: [
-        { text: "Paper", url: "#" },
-      ]
-    },
-  ];
+  const publications = [];
 
   return (
     <section id="publications" className="publications">

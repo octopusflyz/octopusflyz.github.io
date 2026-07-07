@@ -5,26 +5,11 @@ export default function Education() {
   const education = [
     {
       university: "Peking University",
-      degree: "Master/Ph.D. in Computer Science",
-      gpa: "3.8/4.0",
-      period: "2023.09 - Present",
+      degree: "Undergraduate Student in Informatics and Computation Science, School of EECS",
+      gpa: null,
+      period: "2023 - Present",
       location: "Beijing, China",
-      courses: [
-        { name: "Machine Learning", grade: 95 },
-        { name: "Algorithm Design", grade: 92 },
-      ],
-      advisor: null
-    },
-    {
-      university: "Previous University",
-      degree: "Bachelor in Computer Science",
-      gpa: "3.9/4.0",
-      period: "2019.09 - 2023.06",
-      location: "China",
-      courses: [
-        { name: "Data Structures", grade: 98 },
-        { name: "Operating Systems", grade: 95 },
-      ],
+      courses: [],
       advisor: null
     }
   ];

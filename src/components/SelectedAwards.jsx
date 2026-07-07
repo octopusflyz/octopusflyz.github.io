@@ -2,24 +2,7 @@ import React from 'react';
 import "../css/All.css"
 
 export default function SelectedAwards() {
-  const awards = [
-    {
-      text: "[2026] Outstanding Achievement Award",
-      highlight: "(Top 5%)",
-    },
-    {
-      text: "[2025] Academic Excellence Scholarship",
-      highlight: "(Top 3%)",
-    },
-    {
-      text: "[2024] Best Paper Award",
-      highlight: "",
-    },
-    {
-      text: "[2023] National Scholarship",
-      highlight: "(Top 2%)",
-    },
-  ];
+  const awards = [];
 
   return (
     <section id="awards" className="awards">
