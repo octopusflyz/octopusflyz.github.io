@@ -2,7 +2,13 @@ import React from 'react';
 import "../css/All.css"
 
 export default function SelectedAwards() {
-  const awards = [];
+  const awards = [
+    {
+      text: "2025, ",
+      highlight: "2nd Place",
+      rest: " - PKU \"AI Game\" Large Model Challenge, Beginner Track"
+    },
+  ];
 
   return (
     <section id="awards" className="awards">
@@ -17,6 +23,7 @@ export default function SelectedAwards() {
               {award.highlight && (
                 <span className="award-highlight">{award.highlight}</span>
               )}
+              {award.rest}
             </span>
           </div>
         ))}

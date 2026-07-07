@@ -9,7 +9,7 @@ export default function More() {
 
       <div className="more-content">
         <p className="more">
-          I enjoy exploring new technologies, reading, and contributing to open-source projects.
+          I enjoy exploring new ideas and contributing to open-source projects.
           <br />
           Feel free to connect with me through the links below!
         </p>

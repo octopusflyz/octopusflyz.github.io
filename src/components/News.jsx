@@ -12,8 +12,8 @@ function News() {
       content: <>Working on exciting new projects. More coming soon...</>
     },
     {
-      time: "2026.03",
-      content: <>Attended an academic conference and presented my research.</>
+      time: "2025.07",
+      content: <>Joined STRUCT Group as an intern.</>
     },
   ];
 

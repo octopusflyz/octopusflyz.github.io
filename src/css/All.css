@@ -1,6 +1,17 @@
 .about {
   margin: 1rem 0;
+  scroll-margin-top: 80px;
 }
+
+#about { scroll-margin-top: 80px; }
+#news { scroll-margin-top: 80px; }
+#publications { scroll-margin-top: 80px; }
+#awards { scroll-margin-top: 80px; }
+#education { scroll-margin-top: 80px; }
+#internship { scroll-margin-top: 80px; }
+#hobbies { scroll-margin-top: 80px; }
+#more { scroll-margin-top: 80px; }
+#visitor { scroll-margin-top: 80px; }
 
 .intro-text {
   text-align: justify;

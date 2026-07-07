@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import News from './components/News';
 import SelectedAwards from './components/SelectedAwards';
 import Education from './components/Education';
+import Hobbies from './components/Hobbies';
 import More from './components/More';
 import CursorEffects from './components/CursorEffects';
 import './App.css';
@@ -26,6 +27,7 @@ function App() {
         <Internship />
         <Education />
         <SelectedAwards />
+        <Hobbies />
         <More />
       </main>
       <Footer />
