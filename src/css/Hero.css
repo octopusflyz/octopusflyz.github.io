@@ -19,6 +19,10 @@
     padding: 1rem;
   }
 
+  .hero-image {
+    text-align: center;
+  }
+
   .profile-pic {
     width: 80%;
     margin: 0 auto;
@@ -70,6 +74,7 @@
   border-radius: 99px;
   font-size: 0.85rem;
   color: #8B9EB7;
+  font-weight: 700;
 }
 
 .meta-bio {

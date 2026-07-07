@@ -2,35 +2,33 @@ import React from 'react';
 import "../css/All.css";
 
 export default function Publications() {
-  const publications = [];
+  const publications = [
+    {
+      authors: "Jiaying Liu, Yufei Zhang, Minghao Liu, Wenhan Yang",
+      title: "一种基于原型匹配与知识重组的图像增强方法及系统",
+      venue: "Chinese Patent Application, 202610538883.4 (Patent Pending)",
+    },
+    {
+      authors: "Jiaying Liu, Yufei Zhang, Minghao Liu, Yu Cao, Wenhan Yang",
+      title: "一种基于持续学习与自监督学习的视频去雨方法及系统",
+      venue: "Chinese Patent Application, 202610852175.8 (Patent Pending)",
+    },
+  ];
 
   return (
     <section id="publications" className="publications">
       <h2 className="section-title">Publications</h2>
-      
+
       <div className="pub-list">
         {publications.map((pub, index) => (
           <div key={index} className="pub-item">
             <h3 className="pub-title">{pub.title}</h3>
             <p className="pub-authors">{pub.authors}</p>
             <p className="pub-venue">{pub.venue}</p>
-            <div className="pub-links">
-              {pub.links.map((link, idx) => (
-                <a 
-                  key={idx}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="pub-link"
-                >
-                  {link.text}
-                </a>
-              ))}
-            </div>
           </div>
         ))}
       </div>
-      
+
       <style>{`
         .pub-list {
           display: flex;
@@ -61,7 +59,7 @@ export default function Publications() {
         }
         .pub-venue {
           font-size: 0.8rem;
-          color: #F42E7A;
+          color: #8B9EB7;
           font-weight: 600;
           margin-bottom: 0.5rem;
         }
@@ -72,14 +70,14 @@ export default function Publications() {
         .pub-link {
           font-size: 0.8rem;
           padding: 4px 12px;
-          background-color: #FFF6F8;
+          background-color: #F0F3F5;
           border-radius: 99px;
-          color: #F42E7A;
+          color: #8B9EB7;
           text-decoration: none;
           transition: all 0.3s ease;
         }
         .pub-link:hover {
-          background-color: #F42E7A;
+          background-color: #8B9EB7;
           color: white;
         }
       `}</style>
