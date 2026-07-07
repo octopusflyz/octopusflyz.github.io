@@ -8,19 +8,19 @@ function About() {
       
       <div className="intro-text">
         <p>
-          Hi, I'm <strong>Zhang Yufei</strong> (张语菲), a researcher and developer 
-          passionate about technology and design. Currently, I'm pursuing my studies 
-          at <strong>Peking University</strong>.
+          I'm a junior undergraduate student at <strong>Peking University</strong>, 
+          passionate about exploring the intersection of technology and innovation.
         </p>
         
         <p>
-          My research interests include human-computer interaction, software engineering, 
-          and exploring innovative ways to make technology more accessible and user-friendly.
+          Since July 2025, I have been interning at the <strong>Wang Xuan Institute of Computer Science</strong> 
+          under the supervision of <strong>Prof. Jiaying Liu</strong>. My research focuses on image restoration 
+          and generation, including AI-driven image synthesis, deraining, and multi-task unified restoration.
         </p>
 
         <div className="callout">
           <p>
-            I'm always open to collaboration and new opportunities. 
+            I'm always open to collaboration and new opportunities.<br/>
             Feel free to reach out if you're interested in working together!
           </p>
         </div>

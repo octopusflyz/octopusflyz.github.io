@@ -9,7 +9,7 @@ function Footer() {
       color: '#666',
       fontSize: '0.85rem'
     }}>
-      <p>© {new Date().getFullYear()} Zhang Yufei (张语菲)</p>
+      <p>© {new Date().getFullYear()} Yufei Zhang (张语菲)</p>
     </footer>
   );
 }

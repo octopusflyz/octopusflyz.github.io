@@ -4,15 +4,23 @@
 
 .intro-text {
   text-align: justify;
+  text-align-last: left;
+  -webkit-text-align-last: left;
+}
+
+.callout p {
+  text-align: center;
+  text-align-last: center;
+  -webkit-text-align-last: center;
 }
 
 .callout {
-  background-color: #FFF6F8;
+  background-color: #F0F3F5;
   border-radius: 8px;
   padding: 1rem;
   margin-top: 1rem;
   color: #242424;
-  border: 1px #FFBED2 solid;
+  border: 1px #D4CBC5 solid;
   position: relative;
 }
 
@@ -25,7 +33,7 @@
 }
 
 strong {
-  color: #F42E7A;
+  color: #8B9EB7;
 }
 
 .intro-text a {
@@ -34,11 +42,11 @@ strong {
 }
 
 .intro-text a:hover {
-  color: #FFBED2;
+  color: #D4CBC5;
 }
 
 .card-title {
-  color: #F42E7A;
+  color: #8B9EB7;
   font-weight: bolder;
   font-size: 1.4rem;
   font-family: 'Sigmar One', serif;
@@ -69,7 +77,7 @@ strong {
 
 .news-time {
   font-weight: 700;
-  color: #FFBED2;
+  color: #D4CBC5;
 }
 
 .news-content {
@@ -90,7 +98,7 @@ strong {
 }
 
 .award-icon {
-  color: #FFBED2;
+  color: #D4CBC5;
 }
 
 .award-text {
@@ -99,7 +107,7 @@ strong {
 }
 
 .award-highlight {
-  color: #F42E7A;
+  color: #8B9EB7;
 }
 
 /* Education styles */
@@ -152,7 +160,7 @@ strong {
 
 .education-degree strong {
   font-weight: 700;
-  color: #F42E7A;
+  color: #8B9EB7;
 }
 
 .education-location {
@@ -178,7 +186,7 @@ strong {
 }
 
 .education-courses li {
-  background-color: #FFF6F8;
+  background-color: #F0F3F5;
   border-radius: 99px;
   padding: 0px 8px;
   font-size: 0.7rem;
@@ -193,9 +201,9 @@ strong {
 }
 
 .education-advisor .advisor-link {
-  color: #F42E7A;
+  color: #8B9EB7;
   text-decoration: none;
-  border-bottom: 1px dotted #F42E7A;
+  border-bottom: 1px dotted #8B9EB7;
 }
 
 .education-advisor .advisor-link:hover {

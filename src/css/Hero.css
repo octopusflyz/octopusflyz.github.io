@@ -1,12 +1,12 @@
 .profile-pic {
-  width: 60%;
-  max-width: 280px;
+  width: 80%;
+  max-width: 320px;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -33,11 +33,20 @@
   text-align: center;
 }
 
+.hero-meta .meta-tags,
+.hero-meta .contact-small {
+  justify-content: center;
+}
+
+.hero-meta .meta-bio {
+  text-align: center;
+}
+
 .meta-name {
   font-weight: 900;
   font-size: 2rem;
   font-style: italic;
-  color: #F42E7A;
+  color: #8B9EB7;
   margin-bottom: 0.5rem;
 }
 
@@ -49,18 +58,46 @@
 
 .meta-tags {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
-  justify-content: center;
   margin-bottom: 1.5rem;
 }
 
 .meta-tag {
-  background-color: #FFF6F8;
+  background-color: #F0F3F5;
   padding: 4px 12px;
   border-radius: 99px;
   font-size: 0.85rem;
-  color: #F42E7A;
+  color: #8B9EB7;
+}
+
+.meta-bio {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 450px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.meta-bio span {
+  display: block;
+}
+
+.meta-label {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.meta-tags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-buttons {
@@ -88,7 +125,7 @@
 
 .icon-link {
   font-size: 1.4rem;
-  color: #F42E7A;
+  color: #8B9EB7;
 }
 
 .small-text {
@@ -110,7 +147,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: #F42E7A;
+  background-color: #8B9EB7;
   color: white;
   padding: 8px 20px;
   border-radius: 8px;
@@ -121,18 +158,18 @@
 }
 
 .btn:hover {
-  background-color: #ff9cb7;
+  background-color: #A8B5C4;
   color: white;
   transform: translateY(-2px);
 }
 
 .btn-outline {
   background-color: transparent;
-  border: 2px solid #F42E7A;
-  color: #F42E7A;
+  border: 2px solid #8B9EB7;
+  color: #8B9EB7;
 }
 
 .btn-outline:hover {
-  background-color: #F42E7A;
+  background-color: #8B9EB7;
   color: white;
 }

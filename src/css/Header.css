@@ -38,7 +38,7 @@
   font-style: italic;
   font-weight: 900;
   font-size: 1.2rem;
-  color: #ff9cb7;
+  color: #A8B5C4;
   letter-spacing: 0.02em;
   position: relative;
 }
@@ -55,7 +55,7 @@
   top: -0.5em;
   left: -0.14em;
   font-size: 0.8em;
-  color: #F42E7A;
+  color: #8B9EB7;
   display: inline-block;
   transform-origin: 50% 50%;
   animation: spinY2 3s linear infinite;
@@ -197,7 +197,7 @@ button:active {
     align-items: center;
     gap: 0;
     padding: 0.6rem 1rem 1.2rem 1rem;
-    background: #FFF6F8;
+    background: #F0F3F5;
     opacity: 0;
     pointer-events: none;
     transition: transform 320ms cubic-bezier(.2,.9,.3,1), opacity 320ms ease;

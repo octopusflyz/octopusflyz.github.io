@@ -4,63 +4,55 @@
 
 .timeline-container {
   position: relative;
-  padding-left: 4rem;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .timeline-container::before {
   content: "";
   position: absolute;
-  left: 4rem;
+  left: 0;
   top: 0;
   width: 2px;
   height: 100%;
-  background: #FFBED2;
+  background: #D4CBC5;
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 1rem;
   display: flex;
-  align-items: center;
-}
-
-a {
-  color: #242424;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
 
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: 1px;
-  transform: translateX(-50%);
-  top: 1rem;
+  left: -0.4rem;
+  top: 0.5rem;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #F42E7A;
+  background: #8B9EB7;
   z-index: 1;
 }
 
-.timeline-label {
-  position: absolute;
-  top: 45px;
-  transform: translateY(-50%);
-  width: 3rem;
-  font-size: 0.6rem;
-  color: #acacac;
-  white-space: wrap;
-  right: 100%;
-  margin-right: 1rem;
-  text-align: center;
+.timeline-period {
+  flex-shrink: 0;
+  min-width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1.5rem;
+  padding-left: 0.5rem;
 }
 
-.timeline-period-label {
-  font-size: 0.6rem;
-  white-space: pre-line;
+.period-text {
+  font-size: 0.75rem;
+  color: #888;
   text-align: center;
-  padding: 0.6rem 0;
-  line-height: 1;
-  margin-left: 0.4rem;
 }
 
 .timeline-content {
@@ -72,111 +64,68 @@ a {
   border: 1px solid #eee;
   background-color: #fcfcfc;
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.6rem;
   width: 100%;
 }
 
-.exp-container {
-  flex-grow: 1;
-  width: 100%;
-  min-width: 0;
+.exp-header {
   display: flex;
   flex-direction: column;
+  gap: 0.4rem;
 }
 
-.timeline-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.exp-type {
-  display: inline-block;
-  padding: 2px 0;
-  font-size: 0.6rem;
-  font-weight: 700;
-  border-radius: 9999px;
-  color: #fff;
-  width: 58px !important;
-}
-
-.exp-type.work {
-  background-color: #FFBED2;
-  color: #fff;
-}
-
-.exp-type.project {
-  background-color: #bec9ff;
-  color: #ffffff;
-}
-
-.exp-type.research {
-  background-color: #ddbeff;
-  color: #ffffff;
-}
-
-.exp-period {
+.exp-organization {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  color: #888;
-}
-
-.exp-location {
-  font-size: 0.7rem;
-  color: #acacac;
-}
-
-.exp-role {
-  font-size: 0.8rem;
-  color: #f42e7a;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.exp-role a {
-  color: #f42e7a;
-  font-weight: bolder;
-}
-
-.exp-advisor {
-  font-size: 0.8rem;
-  margin-bottom: 4px;
-}
-
-.org-logo-container {
-  flex-shrink: 0;
-  height: 2rem;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+  gap: 0.3rem;
 }
 
 .exp-organization-name {
   font-size: 1rem;
-  font-weight: 800;
-  cursor: pointer;
+  font-weight: 700;
   color: #242424;
 }
 
 .exp-organization-name:hover {
-  color: #ff9cb7;
-  cursor: pointer;
+  color: #8B9EB7;
 }
 
-.org-logo {
-  width: 2rem;
-  height: 100%;
-  object-fit: contain;
+.exp-role-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.exp-role {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.exp-type {
+  display: inline-flex;
+  padding: 2px 8px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  border-radius: 4px;
+  color: #fff;
+  align-items: center;
+}
+
+.exp-type.research {
+  background-color: #8B9EB7;
+}
+
+.exp-location {
+  font-size: 0.75rem;
+  color: #888;
 }
 
 .exp-details,
 .exp-projects {
-  margin: 0.5rem 0 0 0rem;
+  margin: 0;
   padding: 0;
   list-style: none;
   color: #242424;
@@ -186,17 +135,19 @@ a {
 .exp-projects li {
   position: relative;
   padding-left: 1em;
-  margin-bottom: 2px;
+  margin-bottom: 0.3rem;
+  line-height: 1.6;
+  font-size: 0.85rem;
 }
 
 .exp-details li::before,
 .exp-projects li::before {
   content: '✦';
-  color: #FFBED2;
+  color: #8B9EB7;
   position: absolute;
   left: 0;
-  top: 1px;
-  font-size: 0.9em;
+  top: 3px;
+  font-size: 0.7em;
 }
 
 strong {
@@ -219,29 +170,18 @@ strong {
   gap: 4px;
 }
 
-.project-roles name {
-  color: #242424;
-  font-weight: bolder;
-  margin-right: 4px;
-}
-
 .role-tag {
   white-space: nowrap;
   display: inline-block;
-  background-color: #FFF6F8;
+  background-color: #F0F3F5;
   color: #888;
   font-size: 0.7rem;
   padding: 0px 8px;
   border-radius: 99px;
 }
 
-.role-link {
-  white-space: nowrap;
-  display: inline-block;
-}
-
 .github-icon-link {
-  color: #F42E7A;
+  color: #8B9EB7;
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -249,76 +189,23 @@ strong {
   font-size: 0.9rem;
 }
 
-/* Filter tabs */
-.filter-tabs {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-  justify-content: center;
-}
-
-.filter-tab {
-  padding: 6px 16px;
-  border-radius: 99px;
-  font-size: 0.85rem;
-  background-color: #fcfcfc;
-  border: 1px solid #eee;
-  color: #666;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.filter-tab:hover {
-  border-color: #F42E7A;
-  color: #F42E7A;
-}
-
-.filter-tab.active {
-  background-color: #F42E7A;
-  color: white;
-  border-color: #F42E7A;
-}
-
 /* Mobile responsive */
 @media (max-width: 1000px) {
-  .org-logo-container {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    white-space: normal;
-    overflow-wrap: break-word;
-  }
-
-  .timeline-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
-
   .timeline-content {
     display: flex;
     flex-direction: column;
-    align-items: center !important;
+    align-items: flex-start;
   }
 
   .exp-organization {
-    display: flex;
-    flex-direction: column;
-    align-items: center !important;
+    align-items: flex-start;
   }
 
   .exp-role {
-    text-align: center;
-  }
-
-  .exp-projects li {
-    display: flex;
-    flex-direction: column;
+    text-align: left;
   }
 
   .exp-organization-name {
-    text-align: center;
+    text-align: left;
   }
 }
