@@ -1,0 +1,137 @@
+.profile-pic {
+  width: 100%;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .profile-pic {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.hero-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.meta-name {
+  font-weight: 900;
+  font-size: 2rem;
+  font-style: italic;
+  color: #F42E7A;
+  margin-bottom: 0.5rem;
+}
+
+.meta-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.meta-tag {
+  background-color: #FFF6F8;
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 0.85rem;
+  color: #F42E7A;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-small {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.meta-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-link {
+  font-size: 1.4rem;
+  color: #F42E7A;
+}
+
+.small-text {
+  color: #acacac;
+  font-size: 0.75rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.hero-footer {
+  text-align: center;
+  padding: 1rem;
+  color: #acacac;
+  font-size: 0.75rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #F42E7A;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff9cb7;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #F42E7A;
+  color: #F42E7A;
+}
+
+.btn-outline:hover {
+  background-color: #F42E7A;
+  color: white;
+}

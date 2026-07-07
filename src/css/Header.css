@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&family=Playfair+Display&display=swap');
+
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 246, 248, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1000;
+  box-shadow: 0 1px 12px rgba(0,0,0,0.1);
+}
+
+@supports (-webkit-backdrop-filter: blur(4px)) {
+  .header-wrapper {
+    background-color: rgba(255, 246, 248, 0.6);
+  }
+}
+
+.header-container {
+  margin: 0 auto;
+  padding: 0.8rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-name .name-main {
+  font-family: 'Sigmar One', serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #ff9cb7;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+
+.fancy-i {
+  position: relative;
+  display: inline-block;
+  font-style: italic;
+}
+
+.fancy-i::after {
+  content: '✦';
+  position: absolute;
+  top: -0.5em;
+  left: -0.14em;
+  font-size: 0.8em;
+  color: #F42E7A;
+  display: inline-block;
+  transform-origin: 50% 50%;
+  animation: spinY2 3s linear infinite;
+  z-index: 2;
+}
+
+@keyframes spinY2 {
+  0% { transform: rotateY(0deg) scale(0.8); }
+  50% { transform: rotateY(180deg) scale(1.2) }
+  100% { transform: rotateY(360deg) scale(0.8); }
+}
+
+.header-nav {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.header-nav .nav-item {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-nav .nav-item:hover {
+  color: #f42e7a;
+}
+
+.header-nav .nav-item:focus {
+  outline: none;
+  color: #f42e7a;
+}
+
+.header-nav .nav-item::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #f42e7a;
+  transition: width 0.3s ease;
+  margin-top: 3px;
+}
+
+.header-nav .nav-item:hover::after {
+  width: 100%;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1200;
+  border: none !important;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  outline: none;
+  border: none;
+}
+
+button:focus,
+button:focus-visible,
+button:active {
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.hamburger .bar {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+  background: #acacac;
+  border-radius: 2px;
+  transition: transform 0.35s cubic-bezier(.2,.9,.3,1), opacity 0.25s ease, top 0.35s cubic-bezier(.2,.9,.3,1);
+  transform-origin: center;
+}
+
+.hamburger .bar1 { top: 10px; }
+.hamburger .bar2 { top: 17px; }
+.hamburger .bar3 { top: 24px; }
+
+.hamburger.open .bar1 {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open .bar2 {
+  opacity: 0;
+  transform: scaleX(0.8);
+}
+
+.hamburger.open .bar3 {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile responsive */
+@media (max-width: 1000px) {
+  .header-container {
+    padding: 0.8rem 1rem;
+  }
+
+  .header-nav {
+    gap: 1.2rem;
+  }
+
+  .header-nav .nav-item {
+    font-size: 0.9rem;
+  }
+
+  .hamburger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-nav {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0.6rem 1rem 1.2rem 1rem;
+    background: #FFF6F8;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 320ms cubic-bezier(.2,.9,.3,1), opacity 320ms ease;
+    z-index: 1100;
+  }
+
+  .header-nav.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .header-nav .nav-item {
+    font-size: 1rem;
+    padding: 12px 8px;
+    text-align: left;
+    background: transparent;
+    border-radius: 6px;
+    color: #333;
+    border: none;
+    width: 100%;
+  }
+
+  .header-wrapper.menu-open {
+    box-shadow: none !important;
+  }
+}
