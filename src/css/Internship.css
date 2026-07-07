@@ -67,6 +67,12 @@
   flex-direction: column;
   gap: 0.6rem;
   width: 100%;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.timeline-content:hover {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .exp-header {

@@ -8,14 +8,11 @@ function About() {
       
       <div className="intro-text">
         <p>
-          I'm a junior undergraduate student at <strong>Peking University</strong>, 
-          passionate about exploring the intersection of technology and innovation.
+          I am Yufei Zhang (张语菲), an undergraduate student in <strong>Informatics and Computation Science</strong>, <strong>School of Electrical Engineering and Computer Science (EECS)</strong>, <strong>Peking University</strong>, with research interests primarily in <strong>Image Restoration</strong>, <strong>Multimedia Security</strong>, and <strong>AI Generation</strong>.
         </p>
         
         <p>
-          Since July 2025, I have been interning at the <strong>Wang Xuan Institute of Computer Science</strong> 
-          under the supervision of <strong>Prof. Jiaying Liu</strong>. My research focuses on image restoration 
-          and generation, including AI-driven image synthesis, deraining, and multi-task unified restoration.
+          Currently a research intern at <strong>STRUCT</strong> (Spatial and Temporal Restoration, Understanding and Compression Team), Wangxuan Institute of Computer Technology, Peking University, advised by <strong>Prof. Jiaying Liu</strong>.
         </p>
 
         <div className="callout">

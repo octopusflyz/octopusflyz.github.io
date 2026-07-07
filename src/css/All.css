@@ -15,13 +15,19 @@
 }
 
 .callout {
-  background-color: #F0F3F5;
+  background-color: #ffffff;
   border-radius: 8px;
   padding: 1rem;
   margin-top: 1rem;
   color: #242424;
   border: 1px #D4CBC5 solid;
   position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.callout:hover {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .callout::after {
@@ -60,6 +66,12 @@ strong {
   border-radius: 8px;
   background: #fcfcfc;
   border: 1px solid #eee;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.news-list:hover {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .news-list li {
@@ -122,6 +134,12 @@ strong {
   border: 1px solid #eee;
   border-radius: 8px;
   background-color: #fcfcfc;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.education-item:hover {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .education-header {
@@ -215,4 +233,39 @@ strong {
   margin: 0 auto;
   font-family: "Georgia", "Times New Roman", serif;
   font-style: italic;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #D4CBC5;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.contact-box:hover {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #242424;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.contact-item:hover {
+  color: #8B9EB7;
+}
+
+.contact-item svg {
+  font-size: 1.2rem;
 }

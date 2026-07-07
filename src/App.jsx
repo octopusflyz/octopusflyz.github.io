@@ -9,12 +9,14 @@ import News from './components/News';
 import SelectedAwards from './components/SelectedAwards';
 import Education from './components/Education';
 import More from './components/More';
+import CursorEffects from './components/CursorEffects';
 import './App.css';
 import './css/All.css';
 
 function App() {
   return (
     <div className="App">
+      <CursorEffects />
       <Header />
       <main className="main-content">
         <Hero />
